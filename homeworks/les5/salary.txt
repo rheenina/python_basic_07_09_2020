@@ -1,0 +1,10 @@
+Smith 25000.6
+Lee 15060.25
+Kim 50050.3
+Jung 46112.66
+Leigh 12478.99
+Trump 4587.65
+Choi 9865.99
+Ivanov 18647.32
+Petrov 19799.35
+Smolin 47765.54
