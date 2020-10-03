@@ -5,7 +5,14 @@
 Реализовать вывод данных о пользователе одной строкой.
 """
 
-def user_info(**kwargs):
-    return kwargs
 
-print(user_info(name='nina', surname='lee', year_of_birth=1994, city='UU', email='nina@mail.ru', phone=8999999999))
+def user_info(**kwargs) -> str:
+
+    name = kwargs.get('name', '')
+    surname = kwargs.get('surname', '')
+    birth_year = kwargs.get('birth_year', '')
+    city = kwargs.get('city', '')
+    email = kwargs.get('email', '')
+    phone = kwargs.get('phone', '')
+
+    return f"{name} {surname} was born in {birth_year} in {city}. Contacts: {email}, {phone}"

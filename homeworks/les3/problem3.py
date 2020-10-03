@@ -5,8 +5,8 @@
 
 
 def my_func(a, b, c):
-    result = a + b + c - min(a, b, c)
-    return result
+    # returns the sum of two max arguments among a, b, c
+    return a + b + c - min(a, b, c)
 
 
 try:

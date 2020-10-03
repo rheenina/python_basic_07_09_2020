@@ -3,9 +3,10 @@
 Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
 """
 
+
 def division_func(a, b):
-    result = a / b
-    return result
+    return a / b
+
 
 try:
     a = int(input("Enter a divisor: "))
