@@ -1,10 +1,11 @@
-#4.	Пользователь вводит целое положительное число.
-#Найдите самую большую цифру в числе.
-#Для решения используйте цикл while и арифметические операции.
+# 4.	Пользователь вводит целое положительное число.
+# Найдите самую большую цифру в числе.
+# Для решения используйте цикл while и арифметические операции.
 
 try:
     number = int(input("Enter a number "))
     max_number = -1
+
     if number > 0:
         while number > 0:
             tmp = number % 10
@@ -16,5 +17,3 @@ try:
         print("Enter a positive number!")
 except ValueError:
     print("You've entered not a number!")
-
-
