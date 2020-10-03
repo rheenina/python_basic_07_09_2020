@@ -34,9 +34,13 @@ analytics = {
 }
 
 while i <= products_amount:
+
+    # filling product using product template
     for key, ask in product_template.items():
         product[key] = input(ask + '\n')
     product_list.append((i, product))
+
+    # filling analytics from product dictionary
     for p in product.keys():
         analytics[p].append(product[p])
     product = {}
