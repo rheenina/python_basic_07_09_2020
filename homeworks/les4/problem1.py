@@ -7,17 +7,18 @@
 """
 from sys import argv
 
-_, hours, hour_pay, bonus = argv
+# 1st trash variable for file name, last trash variable for anything that would be written after bonus
+_, hours, hour_pay, bonus, *_ = argv
 
 
 def salary(hours: float, hour_pay: float, bonus: float):
     # Calculating month salary with bonus
     month_salary = hours * hour_pay + bonus
-    return f"Salary is {month_salary}."
+    return month_salary
 
 
 try:
     employee_salary = salary(float(hours), float(hour_pay), float(bonus))
-    print(employee_salary)
+    print(f"Salary is {employee_salary}.")
 except ValueError:
     print("Enter only numbers to calculate a salary!")
