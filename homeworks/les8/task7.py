@@ -19,9 +19,9 @@ class ComplexNum:
     def __add__(self, other):
         a = (self.a_number + other.a_number)
         b = (self.b_number + other.b_number)
-        return f'{a} + {b}j'
+        return ComplexNum(a, b)
 
     def __mul__(self, other):
         a = (self.a_number * other.a_number) - (self.b_number * other.b_number)
         b = (self.b_number * other.a_number) + (self.a_number * other.b_number)
-        return f'{a} + {b}j'
+        return ComplexNum(a, b)

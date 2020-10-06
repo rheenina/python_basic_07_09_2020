@@ -24,14 +24,18 @@ class OnlyNums:
     def input_check(self):
 
         while True:
-            user_input = input('Enter a num or "Q" to quit: ').upper()
-            self.nums.append(int(user_input)) if user_input.isdigit() else print('Only nums allowed!')
-            print(f'Your list is {self.nums}')
+            try:
+                user_input = input('Enter a num or "Q" to quit: ').upper()
 
-            if user_input == 'Q':
-                break
+                if user_input == 'Q':
+                    return 'Goodbye'
 
-        return 'Goodbye'
+                self.nums.append(int(user_input))
+                print(f'Your list is {self.nums}')
+
+            except:
+                print('Only nums allowed!')
+                n.input_check()
 
 
 if __name__ == '__main__':

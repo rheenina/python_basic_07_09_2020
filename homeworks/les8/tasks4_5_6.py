@@ -27,7 +27,6 @@ class WareHouse:
         self.supply = {"Name": name, "Price": price, "Amount": amount}
         self.__current_supplies.append(self.supply)
 
-    @property
     def add_supply(self):
         # Method allows to add products to __current_supplies through input as many as needed.
         while True:
@@ -52,7 +51,6 @@ class WareHouse:
 
         return self.__current_supplies
 
-    @property
     def shipping(self):
         # Method allows to add products to __supply_to_ship through input as many as needed.
         while True:

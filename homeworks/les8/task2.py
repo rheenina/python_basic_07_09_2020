@@ -16,5 +16,8 @@ class MyError(Exception):
 if __name__ == '__main__':
     a = 5
     b = 0
-    c = a / b if b != 0 else MyError('Division by zero is prohibited!')
+    if b != 0:
+        c = a / b
+    else:
+        raise MyError('Division by zero is prohibited!')
     print(c)
